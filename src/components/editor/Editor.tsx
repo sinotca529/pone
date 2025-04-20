@@ -8,6 +8,7 @@ import { PropertyPanel } from "./PropertyPanel";
 import { labelPropSchema } from "../ui/FakeLabel";
 import { buttonPropSchema } from "../ui/FakeButton";
 import { inputPropSchema } from "../ui/FakeInput";
+import { tablePropSchema } from "../ui/FakeTable";
 
 const PROP_PANEL_BACKGROUND = "#2b2b2b";
 const PROP_PANEL_TEXT = "#fff";
@@ -17,6 +18,7 @@ const propSchemas = {
   label: labelPropSchema,
   button: buttonPropSchema,
   input: inputPropSchema,
+  table: tablePropSchema,
 } as const;
 
 export function Editor({

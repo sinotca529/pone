@@ -1,4 +1,4 @@
-type Props = { onAdd: (type: "label" | "button" | "input") => void };
+type Props = { onAdd: (type: "label" | "button" | "input" | "table") => void };
 
 export function Toolbar({ onAdd }: Props) {
   return (
@@ -6,6 +6,7 @@ export function Toolbar({ onAdd }: Props) {
       <button onClick={() => onAdd("label")}>ラベル</button>
       <button onClick={() => onAdd("button")}>ボタン</button>
       <button onClick={() => onAdd("input")}>入力</button>
+      <button onClick={() => onAdd("table")}>テーブル</button> {/* ← 追加 */}
     </div>
   );
 }

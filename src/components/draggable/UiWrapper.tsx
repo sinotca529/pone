@@ -53,7 +53,6 @@ export function UiWrapper({
       onClick={() => onSelect(id)}
       style={{
         border: selected ? "2px solid #007acc" : "2px solid #000",
-        background: "#000",
       }}
     >
       {children}

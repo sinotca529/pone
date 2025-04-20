@@ -4,6 +4,7 @@ import { UiWrapper } from "../draggable/UiWrapper";
 import { FakeLabel, labelPropSchema } from "../ui/FakeLabel";
 import { FakeButton, buttonPropSchema } from "../ui/FakeButton";
 import { FakeInput, inputPropSchema } from "../ui/FakeInput";
+import { FakeTable, tablePropSchema } from "../ui/FakeTable";
 
 const CANVAS_WIDTH = 1920;
 const CANVAS_HEIGHT = 1080;
@@ -13,6 +14,7 @@ const componentMap: Record<UIComponent["type"], React.ComponentType<any>> = {
   label: FakeLabel,
   button: FakeButton,
   input: FakeInput,
+  table: FakeTable,
 };
 
 type CompType = keyof typeof componentMap;
@@ -22,6 +24,7 @@ const propSchemas = {
   label: labelPropSchema,
   button: buttonPropSchema,
   input: inputPropSchema,
+  table: tablePropSchema,
 } as const;
 
 type Props = {
